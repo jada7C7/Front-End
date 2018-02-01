@@ -41,6 +41,10 @@ h1 {
   color: #ffffff;
 }
 
+h1:hover {
+  background: #347773;
+}
+
 /* NAVIGATION */
 
 nav {
@@ -138,6 +142,10 @@ h4 {
   color: #ffffff;
   text-align: center;
   z-index: 2;
+}
+
+h4:hover {
+  background: #347773;
 }
 
 .label {
