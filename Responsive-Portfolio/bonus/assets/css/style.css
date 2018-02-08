@@ -8,16 +8,57 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-/* general */
+/* sticky footer styling */
+
+/* https://css-tricks.com/snippets/css/sticky-footer/ */
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+/* end sticky footer styling */
+
+/* start hover styling */
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* end hover styling */
+
+/* general styling */
 
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   clear: both;
-  border: 1px solid red;
 }
 
 h1,
@@ -54,7 +95,8 @@ h3 {
 /* header */
 
 #masthead {
-  position: static;
+  position: fixed;
+  z-index: 99;
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
@@ -142,9 +184,9 @@ h3,
 
 /* main */
 
-/* #main-container {
+#main-container {
   padding-top: 130px;
-} */
+}
 
 .main-section {
   float: left;
@@ -154,48 +196,6 @@ h3,
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
-}
-
-/* portfolio page */
-
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
-}
-
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
 }
 
 /* contact page */
@@ -237,89 +237,3 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-
-
-
-/* Responsive */
-
-@media screen and (max-width: 980px) { 
-  .container {
-    max-width: 700px;
-  }
-
-  .main-section {
-    max-width: 400px;
-  }
-
-  .auth-image {
-    clear:left;
-    float: none;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) { 
-  
-  .container {
-    max-width: 768px;
-  }
-
-  .main-section {
-    max-width: 100%;
-  }
-
-  .auth-image {
-    float: left;
-    width: 200px;
-  }
-
-  .sidebar {
-    float: none;
-    width: 100%;
-    max-width: 768px;
-  }
- }
-
- @media screen and (max-width: 640px) { 
-  
-  .container {
-    max-width: 640px;
-  }
-
-  .main-section {
-    max-width: 100%;
-  }
-
-  .auth-image {
-    float: none;
-    width: 100%;
-  }
-
-  .sidebar {
-    float: none;
-    width: 100%;
-    max-width: 640px;
-  }
-
-  #logo {
-    width: 100%;
-  }
-
-  nav {
-    float: none;
-    text-align: center;
-  }
-
-  nav a {
-    padding: 0 30px;
-    margin-left: 15px;
-    line-height: 18px;
-    color: #999;
-    text-decoration: none;
-    border-left: 1px solid #efefef;
-  }
-
-  nav a:first-child {
-    margin-left:0;
-  }
- }
