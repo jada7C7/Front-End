@@ -1,41 +1,28 @@
-
-
-/* For Sticky footer */
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 90px;
   font: 16px 'Raleway', Helvetica, sans-serif;
   background-image: url('../images/geometry.png');
   color: #777;
 }
 
-
-    .social {
-  display: inline;
+section {
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background: #fff; border: 1px solid #ececec; 
+  padding: 25px 0 0;
 }
 
-.fa {
-  color: #333;
-  padding: 0 10px;
-}
-    section {
-      margin-bottom: 30px;
-      border-radius: 4px;
-      background: #fff; border: 1px solid #ececec; 
-      padding: 25px 0 0;
-    }
-
-    h2 {
-      margin: 0 0 20px;
-      padding-bottom: 20px;
+h2 {
+  margin: 0 0 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #ececec;
   color: #4aaaa5;
   font-family: 'Playfair Display', serif;
-  font-weight: 400i;
+  font-weight: 600;
 }
 
 p {
@@ -46,34 +33,18 @@ img {
   margin: 0 auto 25px;
 }
 
-
-
-/*  footer styles
--------------------------------------------------- */
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #666666;
-  border-top: 3px solid #4aaaa5;
-}
-
-footer > div {
-  padding: 25px;
-  color:#ffffff;
-  font-size: 12px;
-}
-
-/* Nav styles
+/* Nav Styles
 -------------------------------------------------- */
 
 .nav > li {
   border-right: 1px solid #ececec;
   margin-top: 15px;
 }
+
 .nav > li:last-child {
   border-right: none; 
 }
+
 .nav > li > a {
   position: relative;
   display: block;
@@ -84,6 +55,7 @@ footer > div {
   min-height: 75px;
   margin-bottom: 40px;
 }
+
 @media (min-width: 768px) {
   .navbar {
     border-radius: 0px;
@@ -109,18 +81,22 @@ footer > div {
   border: 1px solid transparent;
   border-radius: 4px;
 }
+
 .navbar-toggle:focus {
   outline: 0;
 }
+
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
   border-radius: 1px;
 }
+
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
+
 @media (min-width: 768px) {
   .navbar-toggle {
     display: none;
@@ -132,9 +108,11 @@ footer > div {
     float: left;
     margin: 0;
   }
+
   .navbar-nav > li {
     float: left;
   }
+
   .navbar-nav > li > a {
     padding-top: 15px;
   }
@@ -144,10 +122,12 @@ footer > div {
   background-color: #ffffff;
   border-color: #ececec;
 }
+
 .navbar-default .navbar-brand {
   color: #fff;
   padding-top: 15px;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #fff;
@@ -158,26 +138,32 @@ footer > div {
   color: #bbb;
   font-size: 16px;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #4aaaa5;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #4aaaa5;
   background-color: transparent;
 }
+
 .navbar-default .navbar-toggle {
   border-color: #ddd;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #ddd;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
@@ -189,31 +175,36 @@ footer > div {
   color: #fff;
   background-color: #080808;
 }
+
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
 .navbar-inverse .navbar-nav > .disabled > a:focus {
   color: #444;
   background-color: transparent;
 }
+
 .navbar-inverse .navbar-toggle {
   border-color: #333;
 }
+
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
   background-color: #333;
 }
 
-/* Aside styles
+/*  Panel Styles
 -------------------------------------------------- */
 
 .panel-default {
   border-color: #ececec;
 }
+
 .panel-default > .panel-heading {
   color: #333;
   background-color: #fff;
   border-color: #fff;
 }
+
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ddd;
 }
@@ -226,12 +217,29 @@ footer > div {
   border-bottom: 1px solid #ececec;
   font-size: 24px;
   font-family: 'Playfair Display', serif;
-  font-weight: 400i;
+  font-weight: 600;
   color: #4aaaa5;
 }
+
 .panel-body {
   padding-bottom: 25px;
 }
+.social {
+  display: inline;
+}
+
+.fa {
+  color: #333;
+  padding: 0 10px;
+}
+
+.social a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Form Styles
+-------------------------------------------------- */
 
 form {
   padding: 0 25px;
@@ -248,23 +256,27 @@ form {
   background-color: #4aaaa5;
   border-color: #4aaaa5;
 }
+
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
   background-color: #347773;
   border-color: #347773;
 }
+
 .btn-primary:hover {
   color: #fff;
   background-color: #347773;
   border-color: #347773;
 }
+
 .btn-primary:active,
 .btn-primary.active {
   color: #fff;
   background-color: #347773;
   border-color: #347773;
 }
+
 .btn-primary:active:hover,
 .btn-primary.active:hover,
 .open > .dropdown-toggle.btn-primary:hover,
@@ -283,34 +295,30 @@ form {
   padding-bottom:25px;
 }
 
+/*  Portfolio Styles
+-------------------------------------------------- */
+
 .work {
   position: relative;
-  /* border: 1px solid green; */
-  /* float: left; */
-  /* width: 260px; */
-  /* margin: 20px 0 25px;
-  overflow: auto; */
+  float: left;
+  width:100%;
+  overflow: auto;
 }
 
-/* .work:nth-child(even) {
-  margin-right: 40px;
-} */
-
 .work img {
-  position: relative;
-  /* width: 265px;
+  width: 100%;
   border: 0 none;
-  opacity: 0.8; */
+  opacity: 0.8;
 }
 
 .work h3 {
   position: absolute;
-  bottom: 35px;
-  /* width: 100%; */
+  bottom: 20px;
+  width: 100%;
   padding: 15px;
-  /* margin-bottom: 0;
+  margin-bottom: 15px;
   font-weight: 300;
-  line-height: 30px; */
+  line-height: 30px;
   color: #fff;
   text-align: center;
   background: #4aaaa5;
@@ -319,4 +327,20 @@ form {
 
 .work h3:hover {
   background: #347773;
+}
+
+/*  Footer Styles
+-------------------------------------------------- */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #666666;
+  border-top: 3px solid #4aaaa5;
+}
+
+footer > div {
+  padding: 25px;
+  color:#ffffff;
+  font-size: 12px;
 }
