@@ -1,32 +1,33 @@
 body {
-  background: #000;
   background-image: url("../assets/space_bg.png");
-  font-family: 'Raleway', Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font: 1rem 'Raleway', Helvetica, sans-serif;
+  font-weight: 100;
   color: #fff;
+}
+
+h1 {
+  font: 5rem 'Raleway Dots', Helvetica, sans-serif;
+}
+
+.lead {
+  line-height: 1.7rem;
+}
+
+h1, p {
+  text-align: center;
 }
 
 .col-md-6 {
   border: 1px dashed #fff;
   margin: 10px auto 0;
   padding-top: 15px;
-  background:#101346;
+  background: #101346;
 }
 
 .col-md-8 {
   margin: 0 auto;
-  background: #000;
   padding: 30px;
-}
-
-h1 {
-  font-family: 'Raleway Dots', cursive;
-  font-size: 5em;
-}
-
-h1, p {
-  text-align: center;
+  background: #000;
 }
 
 #guesses, #guessesLeft, #wins, #losses {
