@@ -2,7 +2,7 @@ body {
   font: 18px 'Raleway', Helvetica, sans-serif;
   font-size: 18px;
   line-height: 34px;
-  color: #777;
+  color:#6d6e71;
   background: url("../images/geometry.png");
 }
 
@@ -24,7 +24,7 @@ body {
 
 footer,
 .push {
-  height: 105px;
+  height: 75px;
 }
 
 /* general */
@@ -50,9 +50,9 @@ p:last-child {
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  color: #4aaaa5;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #40426B;
 }
 
 h1 {
@@ -76,21 +76,20 @@ h3 {
   overflow: auto;
   color: #fff;
   background: #fff;
-  border-bottom: 1px solid #ccc;
 }
 
 #logo {
   float: left;
-  width: 325px;
+  width: 250px;
   height: 90px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lato', san-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 200;
   line-height: 90px;
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  background-color:  #40426B;
 }
 
 nav {
@@ -113,7 +112,7 @@ nav a:first-child {
 }
 
 nav a:hover {
-  color: #4aaaa5;
+  color: #40426B;
 }
 
 /* footer */
@@ -123,10 +122,8 @@ footer {
   clear: both;
   font-size: 12px;
   color: #fff;
-  color: #ccc;
   text-align: center;
-  background: #666;
-  border-top: 4px solid #4aaaa5;
+  background-color:  #40426B;
 }
 
 /* sidebar */
@@ -205,8 +202,12 @@ h3,
   line-height: 30px;
   color: #fff;
   text-align: center;
-  background: #4aaaa5;
+  background: #40426B;
   border-bottom: 0;
+}
+
+.work h3:hover {
+  background: rgb(54, 56, 90);
 }
 
 .auth-image {
@@ -253,13 +254,13 @@ input[type=submit] {
   font-size: 18px;
   color: #fff;
   cursor: pointer;
-  background: #4aaaa5;
+  background: #40426B;
   border: 0 none;
 }
 
 /* Animation */
 
-@keyframes polyRotate {
+/* @keyframes polyRotate {
   from {
     transform: rotate(0deg);
   }
@@ -270,7 +271,7 @@ input[type=submit] {
 
   .polyRotate {
     animation: polyRotate 14s linear infinite;
-  }
+  } */
 
 /* Responsive */
 
@@ -350,6 +351,7 @@ input[type=submit] {
   nav a {
   padding: 0 30px;
   margin-left: 15px;
+  font-size: 15px;
   }
 
   nav a:first-child {
