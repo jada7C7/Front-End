@@ -1,5 +1,5 @@
-#Project Notes :crystal_ball:
-##The app randomly picks a letter, and the user has to guess which letter the app chose.
+# Project Notes :crystal_ball:
+## The app randomly picks a letter, and the user has to guess which letter the app chose.
 
 1. Wins - Number of times the user has guessed the letter correctly
 2. Losses - Number of times the user has failed to guess the letter correctly after exhausting all guesses
