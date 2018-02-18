@@ -1,0 +1,46 @@
+body {
+  background-image: url("../images/bg.png");
+  font: 1rem 'Raleway', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #011728;
+}
+
+.container {
+  background: paleturquoise;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.lead {
+  line-height: 1.7rem;
+  font: 1rem 'Cutive Mono', monospace;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.card {
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.col-md-6 {
+  padding: 10px;
+  
+  /* background: #101346; */
+}
+
+.col-md-4 {
+  
+  /* padding: 30px;*/
+  background: #000;
+  border: 1px solid orange;
+  text-align: center;
+}
+
+#guesses, #guessesLeft, #wins, #losses {
+  font-weight: 600;
+}
