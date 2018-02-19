@@ -1,52 +1,42 @@
-
-  
-  /* Functions
--------------------------------- */
-
-
-  // function that initializes the variables for each now round of the game
-	function newGame() {
-    
-    // have computer pick a number between 19-120
-		var targetNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
-    
-    // pick random gem values between 1-12
-		gemOne = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-    gemTwo= Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-    gemThree = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-    gemFour = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-    
-    // set initial value of user's ongoing gem selections sum to 0
-		counter = 0;
-    
-    // update the html for the game board
-		$('#wins').text(wins);
-		$('#losses').text(losses);
-		$("#number-to-guess").text(targetNumber);
-    $('#counter').text(counter);
-    
-
-    $('#one').attr("data-crystalvalue", gemOne);
-    $('#two').attr("data-crystalvalue", gemTwo);
-    $('#three').attr("data-crystalvalue", gemThree);
-    $('#four').attr("data-crystalvalue", gemFour);
-
-	}
-
-
-
-
 /* Global Variables
 -------------------------------- */
 
-  var wins = 0;
-  var losses = 0;
-  var targetNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+var wins = 0;
+var losses = 0;
+var targetNumber = Math.floor(Math.random() * 120) + 1;
+
+/* Functions
+-------------------------------- */
+
+  // Function that initializes the game
+	function newGame() {
     
+    // Computer picks a number between 19-120
+		targetNumber = Math.floor(Math.random() * 120) + 1;
+    
+    // Pick random crystal values between 1-12
+		crystalOne = Math.floor(Math.random() * 12) + 1;
+    crystalTwo= Math.floor(Math.random() * 12) + 1;
+    crystalThree = Math.floor(Math.random() * 12) + 1;
+    crystalFour = Math.floor(Math.random() * 12) + 1;
 
-    newGame();
+    // Set initial value of counter to 0
+		counter = 0;
+    
+    // update the html
+		$('#wins').text(wins);
+		$('#losses').text(losses);
+		$("#guess").text(targetNumber);
+    $('#counter').text(counter);
+    $('#one').attr("data-crystalvalue", crystalOne);
+    $('#two').attr("data-crystalvalue", crystalTwo);
+    $('#three').attr("data-crystalvalue", crystalThree);
+    $('#four').attr("data-crystalvalue", crystalFour);
+	}
 
-  // This time, our click event applies to every single crystal on the page. Not just one.
+  newGame();
+
+  // Function that holds the click event for every crystal on the page
   $(".crystal-image").on("click", function() {
 
     // Determining the crystal's value requires us to extract the value from the data attribute.
@@ -60,21 +50,19 @@
     // Every click, from every crystal adds to the global counter.
     counter += crystalValue;
 
-    // All of the same game win-lose logic applies. So the rest remains unchanged.
+    // Game win-lose logic
     $('#counter').text(counter);
 
     if (counter === targetNumber) {
-      alert("You win!");
-      wins ++;
-      $('#wins').text(wins);
-      newGame();
-    }
-
-    else if (counter > targetNumber) {
-      alert("You lose!!");
-      losses ++;
-      $('#losses').text(losses);
-      newGame();
+        alert("You Win! You collected the right amount of crystals.");
+        wins ++;
+        $('#wins').text(wins);
+        newGame();
+    } else if (counter >= targetNumber) {
+        alert("You Lose! Looks like you collected too many crystals.");
+        losses ++;
+        $('#losses').text(losses);
+        newGame();
     }
 
   });

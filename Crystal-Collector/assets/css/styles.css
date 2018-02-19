@@ -1,18 +1,21 @@
 body {
+  height: 100%;
+  background: linear-gradient(to left top, rgba(253, 240, 237, 1), rgba(237, 251, 253, 1), rgba(253,	240,	237, 1));
+  background-size: cover;
+  background-attachment: fixed;
   font: 1rem 'Raleway', Helvetica, sans-serif;
   font-weight: 400;
   color: #011728;
-  height: 100%;
-  background: linear-gradient(to left top, rgba(253, 240, 237, 0.5), rgba(237, 251, 253, 0.5), rgba(253,	240,	237, 0.5));
-  background-size: cover;
-  background-attachment: fixed;
-
-
 }
 
 h1 {
   font-size: 4rem;
 }
+
+h1, p {
+  text-align: center;
+}
+
 .py-5 {
   padding-bottom: 2rem !important;
 }
@@ -30,12 +33,12 @@ h1 {
   font-family: 'Cutive Mono', monospace;
 }
 
-h1, p {
-  text-align: center;
+.crystal {
+  padding-top: 40px;
 }
 
 .card {
-  width: 15rem;
+  width: 13rem;
   margin: 0 auto;
 }
 
@@ -43,18 +46,11 @@ h1, p {
   margin-bottom: 2rem;
 }
 
-.crystal {
-  padding-top: 40px;
+.col-md-4 {
+  text-align: center;
 }
 
 .col-md-6 {
   padding: 10px;
   width: 50%;
-  /* background: #101346; */
-}
-
-.col-md-4 {
-  
-  /* padding: 30px;*/
-  text-align: center;
 }

@@ -12,25 +12,21 @@
   <!-- Custom styles for this template -->
   <link href="assets/css/styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Raleway:400,600" rel="stylesheet">
-
 </head>
+
 <body>
 
   <div class="container">
-    
     <div class="py-5 text-center">
       <h1>Crystal Collector</h1>
-      <p class="lead">You will be given a random number at the start of the game. Use the crystals to match your points to the random number. The value of the crystals changes for every game and you must figure out their values on your own.
-
-      <p class="lead">Match your points to the random number to win. If you go over, you lose!</p>
+      <p class="lead">Click on each crystal to match your points to the target number. The value of the crystals will change for every game. If your points match the random number, you win. If your points go over the target number, you lose.</p>
     </div>
 
     <div class="row">
-      
       <div class="col-md-4">
         <div class="card">
           <ul class="list-group list-group-flush text-center">
-            <li class="list-group-item">Target Number<br><span class="number" id="number-to-guess"></span></li>
+            <li class="list-group-item">Target Number<br><span id="guess" class="number"></span></li>
             <li class="list-group-item">Your Number<br><span id="counter" class="number"></span></li>
           </ul>
         </div>
@@ -39,20 +35,19 @@
       <div class="col-md-4">
         <div class="row">
           <div class="col-md-6" id="crystals">
-            <img id="one" class="img-fluid crystal-image crystal" src="assets/images/crystal1.png" alt="" width="140" height="140">
+            <img id="one" class="img-fluid crystal-image crystal" src="assets/images/crystal1.png" width="140" height="140" alt="crystal one">
           </div>
           <div class="col-md-6" id="crystals">
-              <img id="two" class="img-fluid crystal-image" src="assets/images/crystal4.png" alt="" width="140" height="140">
-            </div>
+            <img id="two" class="img-fluid crystal-image" src="assets/images/crystal4.png" width="140" height="140" alt="crystal two">
+          </div>
         </div>
-        
         <div class="row">
-            <div class="col-md-6" id="crystals">
-                <img  id="three" class="img-fluid crystal-image" src="assets/images/crystal3.png" alt="" width="140" height="140">
-              </div>
-              <div class="col-md-6" id="crystals">
-                  <img id="four"  class="img-fluid crystal-image crystal" src="assets/images/crystal2.png" alt="" width="140" height="140">
-                </div>
+          <div class="col-md-6" id="crystals">
+            <img id="three" class="img-fluid crystal-image" src="assets/images/crystal3.png" width="140" height="140" alt="crystal three">
+          </div>
+          <div class="col-md-6" id="crystals">
+            <img id="four"  class="img-fluid crystal-image crystal" src="assets/images/crystal2.png" width="140" height="140" alt="crystal four">
+          </div>
         </div>
       </div>
         
@@ -66,7 +61,6 @@
       </div>
 
     </div>
-
   </div>
 
   <!-- Javascript -->
