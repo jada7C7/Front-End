@@ -30,44 +30,48 @@
       <div class="col-md-4">
         <div class="card">
           <ul class="list-group list-group-flush text-center">
-            <li class="list-group-item">Target Number<br>63</li>
-            <li class="list-group-item">Your Number<br>16</li>
+            <li class="list-group-item">Target Number<br><span class="number" id="number-to-guess"></span></li>
+            <li class="list-group-item">Your Number<br><span id="counter" class="number"></span></li>
           </ul>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="row">
-          <div class="col-md-6">
-            <img class="" src="assets/images/crystal1.png" alt="" width="140" height="140">
+          <div class="col-md-6" id="crystals">
+            <img id="one" class="img-fluid crystal-image crystal" src="assets/images/crystal1.png" alt="" width="140" height="140">
           </div>
-          <div class="col-md-6">
-              <img class="" src="assets/images/crystal4.png" alt="" width="140" height="140">
+          <div class="col-md-6" id="crystals">
+              <img id="two" class="img-fluid crystal-image" src="assets/images/crystal4.png" alt="" width="140" height="140">
             </div>
         </div>
         
         <div class="row">
-            <div class="col-md-6">
-                <img class="" src="assets/images/crystal3.png" alt="" width="140" height="140">
+            <div class="col-md-6" id="crystals">
+                <img  id="three" class="img-fluid crystal-image" src="assets/images/crystal3.png" alt="" width="140" height="140">
               </div>
-              <div class="col-md-6">
-                  <img class="" src="assets/images/crystal2.png" alt="" width="140" height="140">
+              <div class="col-md-6" id="crystals">
+                  <img id="four"  class="img-fluid crystal-image crystal" src="assets/images/crystal2.png" alt="" width="140" height="140">
                 </div>
         </div>
       </div>
         
       <div class="col-md-4">
-        <div class="card">
+        <div class="card card-right">
           <ul class="list-group list-group-flush text-center">
-            <li class="list-group-item">Wins<br>0</li>
-            <li class="list-group-item">Losses<br>0</li>
+            <li class="list-group-item">Wins<br><span id="wins" class="number"></span></li>
+            <li class="list-group-item">Losses<br><span id="losses" class="number"></span></li>
           </ul>
         </div>
       </div>
 
-    </div><!-- .row-->
+    </div>
 
-  </div><!-- .container -->
+  </div>
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/crystals.js"></script>
   
 </body>
 </html>

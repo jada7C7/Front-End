@@ -1,21 +1,33 @@
 body {
-  background-image: url("../images/bg.png");
   font: 1rem 'Raleway', Helvetica, sans-serif;
   font-weight: 400;
   color: #011728;
-}
+  height: 100%;
+  background: linear-gradient(to left top, rgba(253, 240, 237, 0.5), rgba(237, 251, 253, 0.5), rgba(253,	240,	237, 0.5));
+  background-size: cover;
+  background-attachment: fixed;
 
-.container {
-  background: paleturquoise;
+
 }
 
 h1 {
   font-size: 4rem;
 }
+.py-5 {
+  padding-bottom: 2rem !important;
+}
 
 .lead {
   line-height: 1.7rem;
   font: 1rem 'Cutive Mono', monospace;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.number {
+  font-size: 3rem;
+  font-family: 'Cutive Mono', monospace;
 }
 
 h1, p {
@@ -27,20 +39,22 @@ h1, p {
   margin: 0 auto;
 }
 
+.card-right {
+  margin-bottom: 2rem;
+}
+
+.crystal {
+  padding-top: 40px;
+}
+
 .col-md-6 {
   padding: 10px;
-  
+  width: 50%;
   /* background: #101346; */
 }
 
 .col-md-4 {
   
   /* padding: 30px;*/
-  background: #000;
-  border: 1px solid orange;
   text-align: center;
-}
-
-#guesses, #guessesLeft, #wins, #losses {
-  font-weight: 600;
 }
