@@ -3,15 +3,20 @@
 
 var wins = 0;
 var losses = 0;
+
+// Computer picks a number between 19-120
 var targetNumber = Math.floor(Math.random() * 120) + 1;
 
 /* Functions
 -------------------------------- */
 
-  // Function that initializes the game
+  // Function that initializes the game.
 	function newGame() {
     
-    // Computer picks a number between 19-120
+    // Set initial value of counter to 0
+		counter = 0;
+    
+    // Random number between 19-120
 		targetNumber = Math.floor(Math.random() * 120) + 1;
     
     // Pick random crystal values between 1-12
@@ -19,9 +24,6 @@ var targetNumber = Math.floor(Math.random() * 120) + 1;
     crystalTwo= Math.floor(Math.random() * 12) + 1;
     crystalThree = Math.floor(Math.random() * 12) + 1;
     crystalFour = Math.floor(Math.random() * 12) + 1;
-
-    // Set initial value of counter to 0
-		counter = 0;
     
     // update the html
 		$('#wins').text(wins);
@@ -54,15 +56,17 @@ var targetNumber = Math.floor(Math.random() * 120) + 1;
     $('#counter').text(counter);
 
     if (counter === targetNumber) {
-        alert("You Win! You collected the right amount of crystals.");
+       // $("#message").text("You Win! You collected the right amount of crystals.");
         wins ++;
         $('#wins').text(wins);
         newGame();
     } else if (counter >= targetNumber) {
-        alert("You Lose! Looks like you collected too many crystals.");
+        //$("#message").text("You Lose! Looks like you collected too many crystals.");
         losses ++;
         $('#losses').text(losses);
         newGame();
     }
 
   });
+
+  
