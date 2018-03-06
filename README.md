@@ -23,6 +23,6 @@ Memory game featuring dynamically updated HTML and CSS powered by jQuery.
 [View Project](http://kristin-i.com/Homework/Crystal-Collector/)
 
 
-# Trivia Game
+## Trivia Game
 Trivia game featuring javacript logic and dynamically updated HTML and CSS powered by jQuery.
 [View Project](http://kristin-i.com/Homework/TriviaGame/)
