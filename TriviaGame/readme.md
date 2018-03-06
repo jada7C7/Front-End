@@ -1,7 +1,7 @@
 # Harry Potter Trivia :zap:
 Multiple choice trivia game using javascript for the logic and jQuery for the HTML.
 
-[Play the Game](http://kristin-i.com/Homework/Trivia-Game/)
+[Play the Game](http://kristin-i.com/Homework/TriviaGame/)
 
 ### How to Play
 
