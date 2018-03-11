@@ -1,7 +1,7 @@
-# Giftastic | 90s TV Edition :tv:
+# GifTastic - 90s TV Edition :tv:
 GifTastic uses the Giphy API to find and display images related to 90s TV shows.
 
-[View the Project](http://kristin-i.com/Homework/Giftastic/)
+[View the Project](http://kristin-i.com/Homework/GifTastic/)
 
 ### The Details
 
@@ -12,16 +12,3 @@ GifTastic uses the Giphy API to find and display images related to 90s TV shows.
 ### Project Built With
 
 HTML5 | CSS3 | JavaScript | jQuery | Giphy API | Bootstrap | Google Fonts
-
-
-
-
-
-
-
-
-
-
-
-
-

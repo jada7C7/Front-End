@@ -26,3 +26,8 @@ Memory game featuring dynamically updated HTML and CSS powered by jQuery.
 ## Trivia Game
 Trivia game featuring javacript logic and dynamically updated HTML and CSS powered by jQuery.
 [View Project](http://kristin-i.com/Homework/TriviaGame/)
+
+
+## GifTastic
+GifTastic uses the Giphy API to find and display images related to 90s TV shows.
+[View Project](http://kristin-i.com/Homework/GifTastic/)
