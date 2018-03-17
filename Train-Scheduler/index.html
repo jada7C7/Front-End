@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>London Tube Scheduler</title>
+
+  <!-- Bootstrap core CSS and Bootwatch theme -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+  
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+</head>
+<body>
+
+<main role="main">
+
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <i class="fas fa-train"></i>&nbsp;<strong>London Tube</strong>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Trains
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item">Bakerloo</li>
+                  <li class="dropdown-item">Central</li>
+                  <li class="dropdown-item">Circle</li>
+                  <li class="dropdown-item">District</li>
+                  <li class="dropdown-item">Jubilee</li>
+                  <li class="dropdown-item">Metropolitan</li>
+                  <li class="dropdown-item">Northern</li>
+                  <li class="dropdown-item">Piccadilly</li>
+                  <li class="dropdown-item">Victoria</li>
+                  <li class="dropdown-item">Waterloo</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container">  
+    <div class="row">
+      <div class="col-md-12">
+          <p class="text-center pt-4 pb-3">Mind the Gap! Destinations, frequency, and arrivals for the London Underground.</p>
+        <div class="card">
+          <div class="card-header">Current Train Schedule</div>
+            <div class="card-body">         
+              <table class="table train-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (mins)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody id="train-data"> 
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">Add Train</div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="train-input">Train Name</label>
+                  <input type="text" class="form-control" id="train-input">
+                </div>
+                <div class="form-group">
+                  <label for="destination-input">Destination</label>
+                  <input type="text" class="form-control" id="destination-input">
+                </div>
+                <div class="form-group">
+                  <label for="time-input">First Train Time (hh:mm - military time)</label>
+                  <input type="text" class="form-control" id="time-input">
+                </div>
+                <div class="form-group">
+                  <label for="frequency-input">Frequency (mins)</label>
+                  <input type="text" class="form-control" id="frequency-input">
+                </div>
+                <button type="button" class="btn btn-primary" id="add-train-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+</main>
+
+<!-- Javascript -->
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+
+<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+<!-- Custom .js -->
+<script src="assets/js/app.js"></script>  
+  
+</body>
+</html>

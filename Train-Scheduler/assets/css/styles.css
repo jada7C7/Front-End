@@ -1,0 +1,12 @@
+.card {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
