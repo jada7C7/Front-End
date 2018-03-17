@@ -31,3 +31,8 @@ Trivia game featuring javacript logic and dynamically updated HTML and CSS power
 ## GifTastic
 GifTastic uses the Giphy API to find and display images related to 90s TV shows.
 [View Project](http://kristin-i.com/Homework/GifTastic/)
+
+
+## London Tube Scheduler
+Train schedule application that incorporates Firebase to host arrival and departure data.
+[View Project](http://kristin-i.com/Homework/Train-Scheduler/)
