@@ -1,12 +1,10 @@
 # LIRI Node App :robot:
 LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 
-[View the Project](https://github.com/kiacone/Homework/tree/master/Liri-Node-App)
-
 ## What Each Command Should Do
-------
 
 **node liri.js my-tweets**
+
 This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
 **node liri.js spotify-this-song <song name here>**
