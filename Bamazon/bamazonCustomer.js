@@ -5,13 +5,13 @@ var inquirer = require('inquirer');
 // create the connection information for the sql database
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 8889, //8809, 3306
+  port: 3306, //8809
 
   // Your username
   user: "root",
 
   // Your password
-  password: "root",
+  password: "",
   database: "bamazonDB"
 });
 
