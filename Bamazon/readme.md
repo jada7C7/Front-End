@@ -12,7 +12,7 @@ NPM packages used: MySQL and Inquirer
 * Asks customer how many they would like to purchase. If there is a sufficient amount in stock, it will return the total for that purchase. If there is not enough of the product in stock, it will tell the user that there isn't enough of the productis insufficient inventory.
 * If the purchase is successful, the quantity will be reflected in the database.
 
-[View Demo](#)
+[View Demo](https://youtu.be/vuShT-wX6o0)
 
 **`BamazonManager.js`**
 
@@ -22,7 +22,7 @@ NPM packages used: MySQL and Inquirer
 * **Add to Inventory:** allows the manager to select a product and add inventory.
 * **Add New Product:** allows the manager to add a new product to the database.
 
-[View Demo](#)
+[View Demo](https://youtu.be/yEPDZ8uU9D8)
 
 ### Project Built With
 
