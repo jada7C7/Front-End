@@ -1,3 +1,8 @@
+## Bamazon
+An Amazon-like storefront using Node.js and MySQL. The app will take in orders from customers and deplete stock from the store's inventory.
+[View Project](https://github.com/kiacone/Homework/tree/master/Bamazon)
+
+
 ## LIRI Node App
 LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 [View Project](https://github.com/kiacone/Homework/tree/master/Liri-Node-App)
