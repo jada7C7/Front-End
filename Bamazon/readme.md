@@ -1,9 +1,19 @@
 # Bamazon
 An Amazon-like storefront using Node.js and MySQL. The app will take in orders from customers and deplete stock from the store's inventory.
 
-NPM packages used: MySQL and Inquirer
+## Getting Started
 
-## What Each File Should Do
+These instructions will get you a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+NPM packages used
+
+```
+MySQL
+Inquirer
+
+```
 
 **`BamazonCustomer.js`**
 
@@ -17,13 +27,13 @@ NPM packages used: MySQL and Inquirer
 **`BamazonManager.js`**
 
 * This app will start with a menu asking the manager to: view products for sale, view all low inventory, add to inventory or add a new product to the database
-* **View Products for Sale:** list of all of the products including department and price for sale.
-* **View Low Inventory:** list of all the products with less than five items in stock.
-* **Add to Inventory:** allows the manager to select a product and add inventory.
-* **Add New Product:** allows the manager to add a new product to the database.
+  * **View Products for Sale:** list of all of the products including department and price for sale.
+  * **View Low Inventory:** list of all the products with less than five items in stock.
+  * **Add to Inventory:** allows the manager to select a product and add inventory.
+  * **Add New Product:** allows the manager to add a new product to the database.
 
 [View Demo](https://youtu.be/yEPDZ8uU9D8)
 
-### Project Built With
+### Built With
 
 JavaScript | Node.js | MySQL
