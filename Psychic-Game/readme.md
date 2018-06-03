@@ -1,7 +1,7 @@
 # The Psychic Game :crystal_ball:
 The app randomly picks a letter, and the user has to guess which letter the app chose.
 
-[Play the Game](http://kristin-i.com/Homework/Psychic-Game/)
+[Play the Game](http://kristin-i.com/Front-End/Psychic-Game/)
 
 ### How to Play
 

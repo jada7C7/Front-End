@@ -1,7 +1,7 @@
 # Crystal Collector :gem:
 The app randomly picks a number, and the user has to guess which number the app chose by clicking on the crystals.
 
-[Play the Game](http://kristin-i.com/Homework/Crystal-Collector/)
+[Play the Game](http://kristin-i.com/Front-End/Crystal-Collector/)
 
 ### How to Play
 
