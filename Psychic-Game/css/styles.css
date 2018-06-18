@@ -33,3 +33,20 @@ h1, p {
 #guesses, #guessesLeft, #wins, #losses {
   font-weight: 600;
 }
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+footer a, footer a:hover {
+  color: #fff;
+}
+
+.github {
+  margin-right: 5px;
+}
