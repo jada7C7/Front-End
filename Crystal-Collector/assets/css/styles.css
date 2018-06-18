@@ -54,3 +54,20 @@ h1, p {
   padding: 10px;
   width: 50%;
 }
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+footer a, footer a:hover {
+  color: #000;
+}
+
+.github {
+  margin-right: 5px;
+}
